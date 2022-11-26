@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+html {
+    color-scheme: dark;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+}
+
+abbr {
+    cursor: help;
+}
+
+#satelliteMap {
+    margin-block-start: 3.5rem;
+    border-radius: .5rem;
+    margin-inline: auto;
+    height: 300px;
+    max-width: 1200px;
+}
+
+.btn {
+    all: unset;
+    color: white;
+    background-color: tomato;
+    clip-path: polygon(5px 0%, calc(100% - 5px) 0%, 100% 5px, 100% calc(100% - 5px),calc(100% - 5px) 100%, 5px 100%, 0% calc(100% - 5px), 0% 5px);
+    padding: .7rem 2rem;
+    margin-block-start: 1rem;
+    background-image: linear-gradient(90deg, rgb(0, 37, 124), rgb(104, 32, 148), rgba(0, 49, 165, 1), rgba(193, 98, 253, 1), rgba(0, 37, 124));
+    background-size: 200%;
+    animation: btn-background-animation 4s infinite linear;
+    animation-play-state: paused;
+    cursor: pointer;
+}
+
+.btn:hover {
+    animation-play-state: running;
+}
+
+@keyframes btn-background-animation {
+    0% {
+        background-position: top 0%, left 0%;
+        scale: 1;
+    }
+
+    50% {
+        scale: 1.05;
+    }
+
+    100% {
+        background-position: 200%, 200%;
+        scale: 1;
+    }
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Get the ISS position in real time</title>
+		<!-- LEAFLET links -->
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+			integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+			crossorigin=""
+		/>
+		<script
+		defer
+			src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+			integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+			crossorigin=""
+		></script>
+		<!-- My Links -->
+		<link rel="stylesheet" href="style.css" />
+		<script defer src="script.js"></script>
+		<link rel="shortcut icon" href="imgs/iss.png" type="image/x-icon" />
+	</head>
+	<body>
+		<header>
+			<h1>
+				Where the
+				<abbr title="International Space Station">ISS</abbr> at?
+			</h1>
+		</header>
+		<main>
+			<section>
+				<p>
+					Latitude:
+					<span id="latPos"></span>
+				</p>
+				<p>
+					Longitude:
+					<span id="longPos"></span>
+				</p>
+				<p>
+					<button id="trackSatellite"class="btn">
+						Track satellite
+					</button>
+				</p>
+			</section>
+			<section>
+				<div id="satelliteMap"></div>
+			</section>
+		</main>
+	</body>
+</html>
